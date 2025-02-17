@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export default function CoverageCard({children}: {children:ReactNode}){
+export default function Card({children}: {children:ReactNode}){
   return (
     <div className="mt-5">
       <div className="flex bg-gray-300 justify-between py-3 px-2 rounded-t-lg">

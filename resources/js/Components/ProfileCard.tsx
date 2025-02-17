@@ -22,23 +22,23 @@ export default function ProfileCard({profileData}: {profileData:ProfileCardDetai
             <a href="mailto:mahen.vahee@gmail.com" className="bg-blue-500 text-white px-4 py-1 rounded text-sm">mahen.vahee@gmail.com</a>
         </div>
 
-
-        <div className="grid grid-cols-7 gap-3 mt-6">
-            {
-              profileData.actions.map(items => {
-                return (
-                  <div key={items.id}>
-                    <div className="flex flex-col items-center bg-green-500 text-white p-1 rounded-lg">
-                      <i className={items.icon +" text-3xl"}></i>
+        <div className="flex justify-center">
+          <div className="grid grid-cols-7 gap-2 mt-6 max-w-96 justify-center">
+              {
+                profileData.actions.map(items => {
+                  return (
+                    <div key={items.id}>
+                      <div className="flex flex-col items-center bg-green-500 text-white p-1 rounded-lg max-w-10">
+                        <i className={items.icon +" text-3xl"}></i>
+                      </div>
+                      <span className="text-xs mt-1">{items.title}</span>
                     </div>
-                    <span className="text-xs mt-1">{items.title}</span>
-                  </div>
-                )
-              })
-            }
-            
-            
+                  )
+                })
+              }
+          </div>
         </div>
+
     </div>
     </div>
 
