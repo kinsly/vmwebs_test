@@ -11,7 +11,7 @@ export default function Welcome()
     <WebLayout>
       <div className="flex gap-4">
         
-        <div className="w-3/4 p-4">
+        <div className="w-3/4 p-4 min-w-[600px]">
           {/* Profile information */}
           <ProfileCard profileData={ProfileCardData}/>
 
