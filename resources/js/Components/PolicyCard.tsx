@@ -1,4 +1,4 @@
-import { PolicyDetails } from "@/types/policyCard"
+import { PolicyDetails } from "@/types/PolicyCardData"
 
 export default function PolicyCard({policyData1,policyData2 }: {policyData1:PolicyDetails, policyData2:PolicyDetails}){
   return(

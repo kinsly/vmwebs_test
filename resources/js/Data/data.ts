@@ -1,6 +1,6 @@
 
 import { Comment, Summary, CoverageCard, CardData } from "@/types/coverageCardData"
-import { PolicyDetails } from "@/types/policyCard"
+import { PolicyDetails } from "@/types/PolicyCardData"
 import { ProfileCardDetails } from "@/types/profileCardData"
 
 export const ProfileCardData: ProfileCardDetails = {
