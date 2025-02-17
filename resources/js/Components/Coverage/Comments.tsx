@@ -1,4 +1,4 @@
-import { Comment } from "@/types/CoverageCard"
+import { Comment } from "@/types/coverageCardData"
 
 export default function CommentsBox({commentsData}: {commentsData:Comment[]})
 {

@@ -1,4 +1,4 @@
-import { Summary } from "@/types/CoverageCard"
+import { Summary } from "@/types/coverageCardData"
 
 export default function SummaryReport({summaryData}: {summaryData:Summary[]})
 {

@@ -1,7 +1,7 @@
 
-import { Comment, Summary, CoverageCard, CardData } from "@/types/CoverageCard"
-import { PolicyDetails } from "@/types/PolicyCard"
-import { ProfileCardDetails } from "@/types/ProfileCard"
+import { Comment, Summary, CoverageCard, CardData } from "@/types/coverageCardData"
+import { PolicyDetails } from "@/types/policyCard"
+import { ProfileCardDetails } from "@/types/profileCardData"
 
 export const ProfileCardData: ProfileCardDetails = {
   name:"Mahendranathan Vaheesan",
@@ -90,7 +90,7 @@ export const policyData2:PolicyDetails = [
 
 
 // Coverage card one
-export const CoverageCardInfo1: CardData[] = [
+const CoverageCardInfo1: CardData[] = [
   {
     id:1,
     name:"Premium",
@@ -113,7 +113,7 @@ export const CoverageCardInfo1: CardData[] = [
   }
 ]
 
-export const CommentsData1:Comment[] = [
+const CommentsData1:Comment[] = [
   {
     id:1,
     isActive:true,
@@ -133,7 +133,7 @@ export const CommentsData1:Comment[] = [
 
 
 // Final Card Data type for coverage cards
-export const CoverageCardData1: CoverageCard = {
+const CoverageCardData1: CoverageCard = {
   heading:{
     title:"Genisis 5 Universal Life",
     amount:100
@@ -143,7 +143,7 @@ export const CoverageCardData1: CoverageCard = {
 }
 
 // Coverage card two
-export const CoverageCardInfo2: CardData[] = [
+const CoverageCardInfo2: CardData[] = [
   {
     id:1,
     name:"Insured",
@@ -166,7 +166,7 @@ export const CoverageCardInfo2: CardData[] = [
   }
 ]
 
-export const CommentsData2:Comment[] = [
+const CommentsData2:Comment[] = [
   {
     id:1,
     isActive:true,
@@ -181,7 +181,7 @@ export const CommentsData2:Comment[] = [
 
 
 // Final Card Data type for coverage cards
-export const CoverageCardData2: CoverageCard = {
+const CoverageCardData2: CoverageCard = {
   heading:{
     title:"UL - T20R RENEW.& CONVERT (002-001)",
     amount:100
@@ -192,7 +192,7 @@ export const CoverageCardData2: CoverageCard = {
 
 
 // Coverage card Three
-export const CoverageCardInfo3: CardData[] = [
+const CoverageCardInfo3: CardData[] = [
   {
     id:2,
     name:"Premium",
@@ -215,7 +215,7 @@ export const CoverageCardInfo3: CardData[] = [
   },
 ]
 
-export const CommentsData3:Comment[] = [
+const CommentsData3:Comment[] = [
   {
     id:1,
     isActive:true,
@@ -230,7 +230,7 @@ export const CommentsData3:Comment[] = [
 
 
 // Final Card Data type for coverage cards
-export const CoverageCardData3: CoverageCard = {
+const CoverageCardData3: CoverageCard = {
   heading:{
     title:"15-YEAR OPTION (004-001)",
     amount:100
@@ -240,7 +240,7 @@ export const CoverageCardData3: CoverageCard = {
 }
 
 // Coverage card Four
-export const CoverageCardInfo4: CardData[] = [
+const CoverageCardInfo4: CardData[] = [
   {
     id:2,
     name:"Premium",
@@ -263,7 +263,7 @@ export const CoverageCardInfo4: CardData[] = [
   },
 ]
 
-export const CommentsData4:Comment[] = [
+const CommentsData4:Comment[] = [
   {
     id:1,
     isActive:true,
@@ -275,7 +275,7 @@ export const CommentsData4:Comment[] = [
     text:'Premium payment a grace period'
   },
   {
-    id:2,
+    id:3,
     isActive:true,
     text:'Premium payment a grace period'
   }
@@ -293,7 +293,7 @@ const Summary4 :Summary[] = [
 ]
 
 // Final Card Data type for coverage cards
-export const CoverageCardData4: CoverageCard = {
+const CoverageCardData4: CoverageCard = {
   heading:{
     title:"Genesis 5 - UNIVERSAL LIFE (001- 001)",
     amount:100

@@ -2,7 +2,7 @@ import GreenButton from "../GreenButton"
 import Comments from "./Comments"
 import SummaryReport from "./SummaryReport"
 import Details from "./Details"
-import { CoverageCard } from "@/types/CoverageCard"
+import { CoverageCard } from "@/types/coverageCardData"
 
 
 export default function CoverageCardItem({data}:{data:CoverageCard}){

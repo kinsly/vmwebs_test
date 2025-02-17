@@ -1,4 +1,4 @@
-import { ProfileCardDetails } from "@/types/ProfileCard";
+import { ProfileCardDetails } from "@/types/profileCardData"
 
 export default function ProfileCard({profileData}: {profileData:ProfileCardDetails})
 {

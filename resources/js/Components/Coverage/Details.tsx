@@ -1,4 +1,4 @@
-import { CardData } from "@/types/CoverageCard";
+import { CardData } from "@/types/coverageCardData";
 
 export default function Details({ data }: { data: CardData[] }) {
   
@@ -11,25 +11,28 @@ export default function Details({ data }: { data: CardData[] }) {
         {/* Left Column */}
         <div>
           <table className="table-auto w-full">
-            {data.slice(0, leftColumnCount).map((item, index) => (
-              <tr key={index}>
-                <td className="p-2 pr-10 text-right whitespace-nowrap">{item.name}</td>
-                <td className="p-2 text-left">{item.value}</td>
-              </tr>
-            ))}
-            
+            <tbody>
+              {data.slice(0, leftColumnCount).map((item, index) => (
+                <tr key={index}>
+                  <td className="p-2 pr-10 text-right whitespace-nowrap">{item.name}</td>
+                  <td className="p-2 text-left">{item.value}</td>
+                </tr>
+              ))}
+            </tbody>
           </table>
         </div>
 
         {/* Right Column */}
         <div>
           <table className="table-auto w-full">
-            {data.slice(leftColumnCount).map((item, index) => (
-              <tr key={index}>
-                <td className="p-2 pr-10 text-right whitespace-nowrap">{item.name}</td>
-                <td className="p-2 text-left">{item.value}</td>
-              </tr>
-            ))}
+            <tbody>
+              {data.slice(leftColumnCount).map((item, index) => (
+                <tr key={index}>
+                  <td className="p-2 pr-10 text-right whitespace-nowrap">{item.name}</td>
+                  <td className="p-2 text-left">{item.value}</td>
+                </tr>
+              ))}
+            </tbody>
           </table>
         </div>
       </div>
