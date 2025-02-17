@@ -1,3 +1,4 @@
+import PolicyCard from "@/Components/PolicyCard";
 import ProfileCard from "@/Components/ProfileCard";
 import WebLayout from "@/Layouts/WebLayout";
 import { ProfileCardDetails } from "@/types/ProfileCard";
@@ -50,6 +51,7 @@ export default function Welcome()
   return ( 
     <WebLayout>
       <ProfileCard profileData={ProfileCardData}/>
+      <PolicyCard/>
     </WebLayout>
     )
 }
