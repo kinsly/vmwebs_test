@@ -1,6 +1,8 @@
+import CoverageCard from "@/Components/CoverageCard";
 import PolicyCard from "@/Components/PolicyCard";
 import ProfileCard from "@/Components/ProfileCard";
 import WebLayout from "@/Layouts/WebLayout";
+import { PolicyDetails } from "@/types/PolicyCard";
 import { ProfileCardDetails } from "@/types/ProfileCard";
 
 const ProfileCardData: ProfileCardDetails = {
@@ -46,12 +48,57 @@ const ProfileCardData: ProfileCardDetails = {
   ]
 }
 
+const policyData1: PolicyDetails = [
+  {
+    id:1,
+    name:'Policy Number',
+    value:'448638103'
+  },
+  {
+    id:2,
+    name:'Ins. Company',
+    value:'Industrial Alliance'
+  },
+  {
+    id:3,
+    name:'Policy Owner',
+    value:'MAHENDRANATHAN VAHEESAN'
+  }
+]
+
+
+const policyData2:PolicyDetails = [
+  {
+    id:1,
+    name:'Premium',
+    value:'$ 354.37'
+  },
+  {
+    id:2,
+    name:'Payor',
+    value:'MAHENDRANATHAN VAHEESAN'
+  },
+  {
+    id:3,
+    name:'Draw Day',
+    value:'15th'
+  },
+  {
+    id:4,
+    name:'Issue Date',
+    value:'Dec 2, 2024'
+  }
+]
+
 export default function Welcome()
 {
   return ( 
     <WebLayout>
       <ProfileCard profileData={ProfileCardData}/>
-      <PolicyCard/>
+      <PolicyCard policyData1={policyData1} policyData2={policyData2}/>
+      <CoverageCard>
+        <div></div>
+      </CoverageCard>
     </WebLayout>
     )
 }
