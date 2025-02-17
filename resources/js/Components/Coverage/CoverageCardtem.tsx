@@ -2,17 +2,17 @@ import GreenButton from "../GreenButton"
 import Comments from "./Comments"
 import SummaryReport from "./SummaryReport"
 import Details from "./Details"
-import { CardData, Comment, Summary } from "@/types/CoverageCard"
+import { CoverageCard } from "@/types/CoverageCard"
 
 
-export default function CoverageCardItem({details,comments, summary}:{details:CardData[],comments:Comment[], summary:Summary[]}){
+export default function CoverageCardItem({data}:{data:CoverageCard}){
   return (
     <div className="mt-5">
       {/* Heading */}
       <div className="flex justify-between bg-gray-500 px-3 pt-5 pb-3">
         <div>
-          <h2 className="flex float-left mr-2 text-white">Genesis Universal Life (001-001)</h2>
-          <button className="px-3 bg-white flex text-blue-950 font-bold">$ NaN</button>
+          <h2 className="flex float-left mr-2 text-white">{data.heading.title}</h2>
+          <button className="px-3 bg-white flex text-blue-950 font-bold">$ {data.heading.amount}</button>
         </div>
         <div>
             <span className="bg-white p-1 m-1"><i className="fa-solid fa-pen"></i></span>
@@ -22,7 +22,7 @@ export default function CoverageCardItem({details,comments, summary}:{details:Ca
 
       {/* Details */}
       <div >
-        <Details data={details}/>
+        <Details data={data.info}/>
       </div>
 
       {/* Actions */}
@@ -31,9 +31,9 @@ export default function CoverageCardItem({details,comments, summary}:{details:Ca
         <GreenButton text="Add Summary Report"/>
       </div>
 
-      <Comments commentsData={comments}/>
+      {data.comments && <Comments commentsData={data.comments}/>}
 
-      <SummaryReport summaryData={summary}/>
+      {data.summary && <SummaryReport summaryData={data.summary}/>}
     </div>
   )
 }

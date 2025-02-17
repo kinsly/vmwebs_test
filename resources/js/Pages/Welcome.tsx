@@ -1,9 +1,8 @@
 import Card from "@/Components/Coverage/Card";
-import CoverageCard from "@/Components/Coverage/Card";
 import CoverageItem from "@/Components/Coverage/CoverageCardtem";
 import PolicyCard from "@/Components/PolicyCard";
 import ProfileCard from "@/Components/ProfileCard";
-import { CommentsData, CoverageCardInfo, policyData1, policyData2, ProfileCardData, SummaryData } from "@/Data/data";
+import { allCoverageCards, policyData1, policyData2, ProfileCardData} from "@/Data/data";
 import WebLayout from "@/Layouts/WebLayout";
 
 export default function Welcome()
@@ -20,9 +19,16 @@ export default function Welcome()
           <PolicyCard policyData1={policyData1} policyData2={policyData2}/>
           
           {/* Coverage Cards */}
-          <Card>
-            <CoverageItem details={CoverageCardInfo} comments={CommentsData} summary={SummaryData}/>
-          </Card >
+          {
+            allCoverageCards.map((coverageCard, key) => {
+              return(
+                <Card key={key}>
+                  <CoverageItem data={coverageCard}/>
+                </Card >
+              )
+            })
+          }
+          
         </div>
 
         <div className="w-1/4 p-4">

@@ -4,8 +4,8 @@ export interface CoverageCard{
     amount:number;
   }
   info:CardData[],
-  comments:Comment[],
-  Summary:Summary[]
+  comments?:Comment[],
+  summary?:Summary[]
 }
 
 export interface Comment{

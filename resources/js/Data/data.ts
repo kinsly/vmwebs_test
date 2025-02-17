@@ -88,7 +88,9 @@ export const policyData2:PolicyDetails = [
   }
 ]
 
-export const CoverageCardInfo: CardData[] = [
+
+// Coverage card one
+export const CoverageCardInfo1: CardData[] = [
   {
     id:1,
     name:"Premium",
@@ -111,7 +113,7 @@ export const CoverageCardInfo: CardData[] = [
   }
 ]
 
-export const CommentsData:Comment[] = [
+export const CommentsData1:Comment[] = [
   {
     id:1,
     isActive:true,
@@ -124,35 +126,183 @@ export const CommentsData:Comment[] = [
   },
   {
     id:3,
+    isActive:false,
+    text:'Premium payment a grace period'
+  }
+]
+
+
+// Final Card Data type for coverage cards
+export const CoverageCardData1: CoverageCard = {
+  heading:{
+    title:"Genisis 5 Universal Life",
+    amount:100
+  },
+  info:CoverageCardInfo1,
+  comments:CommentsData1,
+}
+
+// Coverage card two
+export const CoverageCardInfo2: CardData[] = [
+  {
+    id:1,
+    name:"Insured",
+    value:'MAHENDRANATHAN VAHEESAN'
+  },
+  {
+    id:2,
+    name:"Prim Benefit",
+    value:'VASUKI VAHEESHAN - 100%'
+  },
+  {
+    id:3,
+    name:"Expiry Date",
+    value:'Sep 30, 2058'
+  },
+  {
+    id:4,
+    name:"Expiry Date",
+    value:'Sep 30, 2030'
+  }
+]
+
+export const CommentsData2:Comment[] = [
+  {
+    id:1,
+    isActive:true,
+    text:'Premium payment a grace period'
+  },
+  {
+    id:2,
+    isActive:false,
+    text:'Premium payment a grace period'
+  }
+]
+
+
+// Final Card Data type for coverage cards
+export const CoverageCardData2: CoverageCard = {
+  heading:{
+    title:"UL - T20R RENEW.& CONVERT (002-001)",
+    amount:100
+  },
+  info:CoverageCardInfo2,
+  comments:CommentsData2,
+}
+
+
+// Coverage card Three
+export const CoverageCardInfo3: CardData[] = [
+  {
+    id:2,
+    name:"Premium",
+    value:'$ 108.81'
+  },
+  {
+    id:1,
+    name:"Insured",
+    value:'MAHENDRANATHAN VAHEESAN'
+  },
+  {
+    id:2,
+    name:"Prim Benefit",
+    value:'VASUKI VAHEESHAN - 100%'
+  },
+  {
+    id:3,
+    name:"Expiry Date",
+    value:'Sep 30, 2058'
+  },
+]
+
+export const CommentsData3:Comment[] = [
+  {
+    id:1,
+    isActive:true,
+    text:'Premium payment a grace period'
+  },
+  {
+    id:2,
+    isActive:false,
+    text:'Premium payment a grace period'
+  }
+]
+
+
+// Final Card Data type for coverage cards
+export const CoverageCardData3: CoverageCard = {
+  heading:{
+    title:"15-YEAR OPTION (004-001)",
+    amount:100
+  },
+  info:CoverageCardInfo3,
+  comments:CommentsData3,
+}
+
+// Coverage card Four
+export const CoverageCardInfo4: CardData[] = [
+  {
+    id:2,
+    name:"Premium",
+    value:'$ 108.81'
+  },
+  {
+    id:1,
+    name:"Insured",
+    value:'MAHENDRANATHAN VAHEESAN'
+  },
+  {
+    id:2,
+    name:"Prim Benefit",
+    value:'VASUKI VAHEESHAN - 100%'
+  },
+  {
+    id:3,
+    name:"Expiry Date",
+    value:'Sep 30, 2058'
+  },
+]
+
+export const CommentsData4:Comment[] = [
+  {
+    id:1,
+    isActive:true,
+    text:'Premium payment a grace period'
+  },
+  {
+    id:2,
+    isActive:false,
+    text:'Premium payment a grace period'
+  },
+  {
+    id:2,
     isActive:true,
     text:'Premium payment a grace period'
   }
 ]
 
-export const SummaryData:Summary[] = [
+const Summary4 :Summary[] = [
   {
     id:1,
-    text:'Premium payment a grace period'
+    text:"Insurance policy terms include policy term"
   },
   {
     id:2,
-    text:'Premium payment a grace period'
-  },
-  {
-    id:3,
-    text:'Premium payment a grace period'
+    text:"Insurance policy terms include policy term"
   }
 ]
 
 // Final Card Data type for coverage cards
-export const CoverageCardData: CoverageCard = {
+export const CoverageCardData4: CoverageCard = {
   heading:{
-    title:"Genisis 5 Universal Life",
+    title:"Genesis 5 - UNIVERSAL LIFE (001- 001)",
     amount:100
   },
-  info:CoverageCardInfo,
-  comments:CommentsData,
-  Summary:SummaryData
+  info:CoverageCardInfo4,
+  comments:CommentsData4,
+  summary:Summary4
 }
 
-
+export const allCoverageCards:CoverageCard[] = [
+  CoverageCardData1,CoverageCardData2,CoverageCardData3, CoverageCardData4
+]
