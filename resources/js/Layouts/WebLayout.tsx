@@ -11,22 +11,28 @@ const navItems: SideBarSection[] =
     items: [
       {
         id:1,
-        icon:'',
+        icon:'fa-solid fa-bars',
         title:'Dashboard',
         href:'/'
       },
       {
         id:2,
-        icon:'',
-        title:'Policies',
+        icon:'fa-solid fa-users',
+        title:'Client',
         href:'/'
       },
       {
         id:3,
-        icon:'',
+        icon:'fa-solid fa-shield-halved',
+        title:'Policies',
+        href:'/'
+      },
+      {
+        id:4,
+        icon:'fa-regular fa-clipboard',
         title:'Coverage',
         href:'/'
-      }
+      },
     ],
   },
   {
@@ -35,21 +41,21 @@ const navItems: SideBarSection[] =
     items:[
       {
         id:1,
-        icon:'',
+        icon:'fa-solid fa-magnifying-glass-arrow-right',
         title:'Products',
         href:'/products'
       },
       {
         id:2,
-        icon:'',
+        icon:'fa-solid fa-folder-tree',
         title:'Coverage Type',
-        href:'/products'
+        href:'/Coverage'
       },
       {
         id:3,
-        icon:'',
+        icon:'fa-solid fa-gear',
         title:'Settings',
-        href:'/products'
+        href:'/settings'
       }
 
     ]

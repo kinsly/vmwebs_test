@@ -1,5 +1,4 @@
 import { SideBarSection } from "@/types/sidebar"
-import React from "react"
 
 export default function SideBar({navItems}:{navItems:SideBarSection[]})
 {
@@ -19,7 +18,7 @@ export default function SideBar({navItems}:{navItems:SideBarSection[]})
                     return (
                       <li className="mb-1" key={items.id}>
                         <a href="#" className="flex items-center py-1 px-2 rounded hover:bg-gray-700">
-                          <i className="fa-solid fa-bars mr-5" ></i>
+                        <i className={items.icon+" mr-5"} ></i>
                           {items.title}
                         </a>
                       </li>)
